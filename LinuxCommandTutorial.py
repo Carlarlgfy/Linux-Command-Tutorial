@@ -1,5 +1,3 @@
-
-
 def tutorial_add_user():
     print("\nUSER CREATION TUTORIAL\n")
     print("This exercise teaches how Linux creates and removes system users.")
@@ -85,6 +83,42 @@ def tutorial_disk():
     print("shows folder sizes in the current directory\n")
 
 
+def tutorial_files():
+    print("\nFILE CREATION AND DELETION TUTORIAL\n")
+    print("Files are the basic units of data storage in Linux.")
+    print("Learning how to create and delete files is essential for scripting, logging, and everyday terminal work.\n")
+
+    print("STEP 1")
+    print("touch example.txt")
+    print("creates a new empty file named example.txt\n")
+
+    print("STEP 2")
+    print("ls")
+    print("lists files in the current directory so you can see the file\n")
+
+    print("STEP 3")
+    print("rm example.txt")
+    print("deletes the file\n")
+
+
+def tutorial_folders():
+    print("\nFOLDER CREATION AND DELETION TUTORIAL\n")
+    print("Folders (directories) organize files in Linux.")
+    print("System administrators use directories to structure projects, logs, and user environments.\n")
+
+    print("STEP 1")
+    print("mkdir testfolder")
+    print("creates a new directory named testfolder\n")
+
+    print("STEP 2")
+    print("ls")
+    print("lists directories and files so you can confirm it exists\n")
+
+    print("STEP 3")
+    print("rmdir testfolder")
+    print("removes the directory if it is empty\n")
+
+
 def main():
     while True:
         print("\nLINUX TERMINAL PRACTICE\n")
@@ -92,7 +126,9 @@ def main():
         print("2 group management tutorial")
         print("3 permissions tutorial")
         print("4 disk usage tutorial")
-        print("5 exit\n")
+        print("5 file creation tutorial")
+        print("6 folder creation tutorial")
+        print("7 exit\n")
 
         choice = input("select tutorial: ")
 
@@ -109,6 +145,12 @@ def main():
             tutorial_disk()
 
         elif choice == "5":
+            tutorial_files()
+
+        elif choice == "6":
+            tutorial_folders()
+
+        elif choice == "7":
             break
 
         else:
